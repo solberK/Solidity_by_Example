@@ -18,6 +18,14 @@ MAINTAINER "YK1211"
 //ここにはパッケージのインストールやファイルのコピーなど、イメージの時点で実行しておきたいコマンドを書きます。
 RUN apt update -y 
 RUN apt install curl vim git net-tools build-essential -y
+RUN apt install nodejs
+RUN apt install npm
+
+//RUN npm i typescript --save
+//npm i ts-node --save
+//npm i @uniswap/v3-sdk --save
+//npm i @uniswap/sdk-core i --save
+//npm i ethers  --save
 
 //CMD
 //コンテナの起動時に指定したコマンドが実行される
