@@ -1,3 +1,2 @@
---コンテナの起動
- docker run -w #{コンテナ内のディレクトリ} -it #{利用したいイメージ} /bin/bash
+--イメージからコンテナの起動して、ディレクトリを指定して、bashに入る
  docker run --name uniswap_container -w /root/uniswap -it uniswap_file:0.1 /bin/bash
