@@ -1,3 +1,8 @@
 --イメージからコンテナの起動して、ディレクトリを指定して、bashに入る
 --コンテナを最初に起動させる時
  docker run --name uniswap_container -w /root/uniswap -v /Users/yk1211/Documents/ethereum/uniswap:/root -it uniswap_file:0.1 /bin/bash
+ 
+ 
+ --再度、作成済のコンテナ内で作業したい時
+①まず作業したいコンテナを起動する
+②docker exec -i -t uniswap_container /bin/bash
